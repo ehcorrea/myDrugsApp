@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "target": "esnext",                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
-    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-    "lib": ["es2017"],                        /* Specify library files to be included in the compilation. */
-    "allowJs": true,                          /* Allow javascript files to be compiled. */
-    "jsx": "react-native",                    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-    "noEmit": true,                           /* Do not emit outputs. */
-    "isolatedModules": true,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
-
+    "target": "esnext",                       
+    "module": "commonjs",                     
+    "lib": ["es2017"],
+    "allowJs": true, "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "strict": true, 
     "baseUrl": ".",                      
     "paths": {
