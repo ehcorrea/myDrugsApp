@@ -13,6 +13,10 @@ module.exports = {
     '!**/node_modules/**',
     '!android/**',
     '!ios/**',
+    '!src/@types/**',
+    '!src/**/index.{ts,tsx}',
+    '!src/config/**',
+    '!src/test/**',
   ],
   coverageThreshold: {
     global: {
