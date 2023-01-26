@@ -1,4 +1,6 @@
 import React from 'react';
+import '@testing-library/jest-native';
+
 import {
   render as renderUI,
   RenderOptions,
