@@ -117,12 +117,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
-        release {
-          storeFile file(UPLOAD_STORE_FILE)
-          storePassword UPLOAD_STORE_PASSWORD
-          keyAlias UPLOAD_KEY_ALIAS
-          keyPassword UPLOAD_KEY_PASSWORD
-        }
+        // release {
+        //   storeFile file(ANDROID_SIGNING_KEY)
+        //   storePassword ANDROID_KEY_STORE_PASSWORD
+        //   keyAlias ANDROID_ALIAS
+        //   keyPassword ANDROID_KEY_PASSWORD
+        // }
     }
     buildTypes {
         debug {
