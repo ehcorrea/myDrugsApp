@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1488424464",
+    "project_id": "mydrugs-e402e",
+    "storage_bucket": "mydrugs-e402e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1488424464:android:263222daada7eaecebc495",
+        "android_client_info": {
+          "package_name": "com.ehcorrea.mydrugsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1488424464-f15mv2qkqnegnln3arjikcr1qkc9l7hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ehcorrea.mydrugsapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1488424464-ovnj3jnge12endpg5j4fds34u02654dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD57mt92vVHOhwftV-UTIVbY-Ou0Xkd8f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1488424464-ovnj3jnge12endpg5j4fds34u02654dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
