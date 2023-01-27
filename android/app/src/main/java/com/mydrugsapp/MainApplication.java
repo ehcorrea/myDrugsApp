@@ -1,4 +1,4 @@
-package com.mydrugsapp;
+package com.ehcorrea.mydrugsapp;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

@@ -1,4 +1,4 @@
-package com.mydrugsapp;
+package com.ehcorrea.mydrugsapp;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
