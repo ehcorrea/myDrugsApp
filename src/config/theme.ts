@@ -1,13 +1,23 @@
 export default {
   border: {
     radius: {
-      xsmall: '4px',
-      small: '8px',
-      medium: '10px',
-      large: '20px',
+      xsmall: 4,
+      small: 8,
+      medium: 10,
+      large: 20,
     },
   },
   font: {
+    family: {
+      bold: 'FiraSans-Bold',
+      boldItalic: 'FiraSans-BoldItalic',
+      italic: 'FiraSans-Italic',
+      medium: 'FiraSans-Medium',
+      mediumItalic: 'FiraSans-MediumItalic',
+      regular: 'FiraSans-Regular',
+      semiBold: 'FiraSans-SemiBold',
+      semiBoldItalic: 'FiraSans-SemiBoldItalic',
+    },
     wight: {
       light: 300,
       normal: 400,
@@ -15,12 +25,12 @@ export default {
       xbold: 700,
     },
     sizes: {
-      xsmall: '10px',
-      small: '14px',
-      medium: '16px',
-      large: '20px',
-      xlarge: '24px',
-      xxlarge: '28px',
+      xsmall: 10,
+      small: 14,
+      medium: 16,
+      large: 20,
+      xlarge: 24,
+      xxlarge: 28,
     },
   },
   colors: {
@@ -36,12 +46,12 @@ export default {
     red: '#FF6347',
   },
   spacings: {
-    xxsmall: '8px',
-    xsmall: '14px',
-    medium: '16px',
-    large: '20px',
-    xlarge: '28px',
-    xxlarge: '32px',
-    huge: '44px',
+    xxsmall: 8,
+    xsmall: 14,
+    medium: 16,
+    large: 20,
+    xlarge: 28,
+    xxlarge: 32,
+    huge: 44,
   },
 } as const;
