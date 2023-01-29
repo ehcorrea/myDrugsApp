@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Text } from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
 
 import { Provider } from '@/components';
+import { Routes } from '@/routes';
 
 export default function App() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <Provider>
-      <Text>Render</Text>
+      <Routes />
     </Provider>
   );
 }
