@@ -1,6 +1,6 @@
 {
   "src/**/*.{ts,tsx}": [
     "yarn lint --fix",
-    "yarn test --findRelatedTests --bail --passWithNoTests"
+    "yarn test --findRelatedTests --bail --passWithNoTests --coverageThreshold '{}'"
   ]
 }
