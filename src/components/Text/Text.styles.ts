@@ -13,7 +13,7 @@ export const Text = styled.Text<TextStyleProps>`
   ${({
     theme,
     size = 'medium',
-    color = 'white',
+    color = 'black',
     fontFamily = 'regular',
   }) => css`
     color: ${theme.colors[color!]};
@@ -24,7 +24,8 @@ export const Text = styled.Text<TextStyleProps>`
 
 export const Title = styled(Text)`
   ${({ theme }) => css`
-    font-family: ${theme.font.family.bold};
+    font-family: ${theme.font.family.title};
+    font-weight: ${theme.font.wight.bold};
   `}
 `;
 

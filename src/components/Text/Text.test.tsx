@@ -10,7 +10,7 @@ describe('<Text/>', () => {
 
     expect(text).toHaveStyle({
       fontFamily: theme.font.family.regular,
-      color: theme.colors.white,
+      color: theme.colors.black,
       fontSize: RFValue(theme.font.sizes.medium),
     });
   });
@@ -20,7 +20,7 @@ describe('<Text/>', () => {
     const text = container.getByText('Render Text');
 
     expect(text).toHaveStyle({
-      fontFamily: theme.font.family.bold,
+      fontFamily: theme.font.family.title,
     });
   });
 
