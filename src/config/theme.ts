@@ -9,14 +9,14 @@ export default {
   },
   font: {
     family: {
-      bold: 'FiraSans-Bold',
-      boldItalic: 'FiraSans-BoldItalic',
-      italic: 'FiraSans-Italic',
-      medium: 'FiraSans-Medium',
-      mediumItalic: 'FiraSans-MediumItalic',
-      regular: 'FiraSans-Regular',
-      semiBold: 'FiraSans-SemiBold',
-      semiBoldItalic: 'FiraSans-SemiBoldItalic',
+      title: 'PlayfairDisplay-regular',
+      titleItalic: 'PlayfairDisplay-Italic',
+      italic: 'Poppins-Italic',
+      medium: 'Poppins-Medium',
+      mediumItalic: 'Poppins-MediumItalic',
+      regular: 'Poppins-Regular',
+      semiBold: 'Poppins-SemiBold',
+      semiBoldItalic: 'Poppins-SemiBoldItalic',
     },
     wight: {
       light: 300,
@@ -25,12 +25,13 @@ export default {
       xbold: 700,
     },
     sizes: {
-      xsmall: 10,
+      xsmall: 12,
       small: 14,
       medium: 16,
       large: 20,
       xlarge: 24,
       xxlarge: 28,
+      huge: 32,
     },
   },
   colors: {
