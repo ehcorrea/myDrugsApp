@@ -1,21 +1,27 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { Text } from 'react-native';
 
-import { InitialBackground } from '@/assets/images';
+import { Button } from '@/components';
 
-import * as S from './Styles.InicialScreen';
+import * as S from './InicialScreen.styles';
 
 export function InicialScreen() {
   return (
-    <S.Wrapper>
-      <S.Background source={InitialBackground} resizeMode="cover">
-        <S.Container>
-          <SafeAreaView>
-            <Text>Teste</Text>
-          </SafeAreaView>
-        </S.Container>
-      </S.Background>
-    </S.Wrapper>
+    <S.Container>
+      <S.Header>
+        <S.Banner accessibilityLabel="inicial screen banner" />
+      </S.Header>
+
+      <S.Body>
+        <S.Title>Beyond The</S.Title>
+        <S.SecondTitleWrapper>
+          <S.Title>Journey</S.Title>
+        </S.SecondTitleWrapper>
+        <S.Ornament />
+      </S.Body>
+
+      <S.Footer>
+        <Button label="Get Started" rounded="large" />
+      </S.Footer>
+    </S.Container>
   );
 }
