@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renderiza dots com 1 1`] = `
+exports[`render dots with 1 1`] = `
 <View
   style={
     [
@@ -38,58 +38,7 @@ exports[`renderiza dots com 1 1`] = `
 </View>
 `;
 
-exports[`renderiza dots com 2 1`] = `
-<View
-  style={
-    [
-      {
-        "flexDirection": "row",
-      },
-    ]
-  }
->
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#030517",
-          "borderRadius": 10,
-          "height": 8,
-          "width": 20,
-        },
-      ]
-    }
-  />
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#8F8F8F",
-          "borderRadius": 10,
-          "height": 8,
-          "marginLeft": 2,
-          "width": 8,
-        },
-      ]
-    }
-  />
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#8F8F8F",
-          "borderRadius": 10,
-          "height": 8,
-          "marginLeft": 2,
-          "width": 8,
-        },
-      ]
-    }
-  />
-</View>
-`;
-
-exports[`renderiza dots com 3 1`] = `
+exports[`render dots with 2 1`] = `
 <View
   style={
     [
@@ -137,6 +86,57 @@ exports[`renderiza dots com 3 1`] = `
       ]
     }
   />
+</View>
+`;
+
+exports[`render dots with 3 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#030517",
+          "borderRadius": 10,
+          "height": 8,
+          "width": 20,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#8F8F8F",
+          "borderRadius": 10,
+          "height": 8,
+          "marginLeft": 2,
+          "width": 8,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#8F8F8F",
+          "borderRadius": 10,
+          "height": 8,
+          "marginLeft": 2,
+          "width": 8,
+        },
+      ]
+    }
+  />
   <View
     style={
       [
@@ -153,7 +153,7 @@ exports[`renderiza dots com 3 1`] = `
 </View>
 `;
 
-exports[`renderiza dots com undefined 1`] = `
+exports[`render dots with undefined 1`] = `
 <View
   style={
     [
