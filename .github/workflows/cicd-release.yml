@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Bump Version
+        uses: ehcorrea/myDrugsApp/.github/workflows/bump-version.yml@{ref}
+    
       - name: Check out Git repository
         uses: actions/checkout@v3
 
@@ -81,4 +84,5 @@ jobs:
           appId: ${{secrets.ANDROID_FIREBASE_APP_ID}}
           serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
           groups: testers
+          releaseNotesFile: CHANGELOG.md
           file: ./app-release-unsigned-signed.apk
