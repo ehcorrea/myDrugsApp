@@ -8,8 +8,9 @@ jobs:
       uses: org/repo/.github/workflows/build.yml@main
       
     build:
-      needs: bump
       runs-on: ubuntu-latest
+
+      needs: bump
 
       steps:
         - name: Check out Git repository
