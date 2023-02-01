@@ -10,7 +10,9 @@
     "test": "jest",
     "ios:build": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='ios'",
     "lint": "eslint src --max-warnings=0",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "gen:component": "yarn plop --plopfile generators/component-plopfile.js && yarn eslint --fix 'src/components/index.ts'"
+
   },
   "dependencies": {
     "@react-native-firebase/app": "^16.7.0",
@@ -57,6 +59,7 @@
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.1.0",
     "metro-react-native-babel-preset": "0.73.7",
+    "plop": "^3.1.1",
     "prettier": "^2.4.1",
     "react-native-dotenv": "^3.4.7",
     "react-native-svg-transformer": "^1.0.0",
