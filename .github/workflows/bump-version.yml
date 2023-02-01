@@ -10,11 +10,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.TOKEN_ACTION }}
+        token: ${{ github.token }}
     - name: Bump version and push tag
       uses: TriPSs/conventional-changelog-action@v3
       with:
-        github-token: ${{ secrets.TOKEN_ACTION }}
+        github-token: ${{ github.token }}
         git-message: 'chore(release): {version}'
         tag-prefix: ''
         output-file: 'CHANGELOG.md'
