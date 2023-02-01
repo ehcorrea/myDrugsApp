@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
       with:
         token: ${{ secrets.TOKEN_ACTION }}
     - name: Bump version and push tag
@@ -15,6 +16,6 @@ jobs:
       with:
         github-token: ${{ secrets.TOKEN_ACTION }}
         git-message: 'chore(release): {version}'
-        preset: 'angular'
+        preset: 'react'
         tag-prefix: ''
         output-file: 'CHANGELOG.md'
