@@ -12,9 +12,6 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        - name: Bump Version
-          uses: ehcorrea/myDrugsApp/.github/workflows/bump-version.yml@{ref}
-
         - name: Check out Git repository
           uses: actions/checkout@v3
 
