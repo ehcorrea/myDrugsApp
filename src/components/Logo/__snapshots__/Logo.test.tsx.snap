@@ -31,7 +31,7 @@ exports[`<Logo/> [com texto] renderiza com sucesso { color: 'black', size: 'larg
         },
         [
           {
-            "color": "#030517",
+            "color": "#000000",
           },
         ],
         {
@@ -751,7 +751,7 @@ exports[`<Logo/> [com texto] renderiza com sucesso {} 1`] = `
         },
         [
           {
-            "color": "#030517",
+            "color": "#000000",
           },
         ],
         {
@@ -991,7 +991,7 @@ exports[`<Logo/> [sem texto] renderiza com sucesso { color: 'black', size: 'larg
         },
         [
           {
-            "color": "#030517",
+            "color": "#000000",
           },
         ],
         {
@@ -1179,7 +1179,7 @@ exports[`<Logo/> [sem texto] renderiza com sucesso { color: 'black', size: 'norm
         },
         [
           {
-            "color": "#030517",
+            "color": "#000000",
           },
         ],
         {

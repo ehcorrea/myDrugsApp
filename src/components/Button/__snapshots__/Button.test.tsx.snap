@@ -33,7 +33,7 @@ exports[`[border large] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "borderRadius": 20,
       "height": 44,
       "justifyContent": "center",
@@ -92,7 +92,7 @@ exports[`[border medium] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "borderRadius": 10,
       "height": 44,
       "justifyContent": "center",
@@ -151,7 +151,7 @@ exports[`[border small] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "borderRadius": 8,
       "height": 44,
       "justifyContent": "center",
@@ -210,7 +210,7 @@ exports[`[border xsmall] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "borderRadius": 4,
       "height": 44,
       "justifyContent": "center",
@@ -268,7 +268,7 @@ exports[`[children] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "height": 44,
       "justifyContent": "center",
       "opacity": 1,
@@ -315,7 +315,7 @@ exports[`[label] success render Button 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#030517",
+      "backgroundColor": "#000000",
       "height": 44,
       "justifyContent": "center",
       "opacity": 1,
