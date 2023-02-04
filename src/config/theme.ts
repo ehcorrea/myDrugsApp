@@ -41,7 +41,7 @@ export default {
     lightBg: '#06092B',
     white: '#FAFAFA',
     black: '#000000',
-    lightGray: '#EAEAEA',
+    lightGray: '#E1E1E1',
     gray: '#545454',
     darkGray: '#2E2F42',
     red: '#FF6347',
