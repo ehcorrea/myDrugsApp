@@ -7,6 +7,9 @@ module.exports = {
   setupFiles: ['<rootDir>/.jest/setup.tsx/'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setupFilesAfterEnv.ts/'],
   transformIgnorePatterns: ['node_modules/(?!@react-native|react-native)'],
+  transform: {
+    '^.+\\.svg$': '<rootDir>/src/test/fileTransformer.js',
+  },
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
