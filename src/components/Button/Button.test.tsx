@@ -47,9 +47,10 @@ test.each(Object.keys(theme.border.radius))(
 
 test('should success render Button.Link', () => {
   const container = render(
-    <Button.Link label="button label" onPress={onPress} />
+    <Button.Link label="button label" onPress={onPress} color="black" />
   );
   const button = container.getByText('button label');
+  expect(button).toHaveStyle({ color: theme.colors.black });
 
   fireEvent.press(button);
   expect(onPress).toHaveBeenCalled();

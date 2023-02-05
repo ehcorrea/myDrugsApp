@@ -23,6 +23,9 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
   `}
 `;
 
-export const Label = styled(Text).attrs({ color: 'red', size: 'small' })`
+export const Label = styled(Text).attrs(({ color = 'red' }) => ({
+  color,
+  size: 'small',
+}))`
   text-transform: capitalize;
 `;

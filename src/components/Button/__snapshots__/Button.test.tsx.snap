@@ -376,12 +376,12 @@ exports[`should success render Button.Link 1`] = `
   }
 >
   <Text
-    color="red"
+    color="black"
     size="small"
     style={
       [
         {
-          "color": "#A74141",
+          "color": "#000000",
           "fontFamily": "Poppins-Regular",
           "fontSize": 27,
         },
