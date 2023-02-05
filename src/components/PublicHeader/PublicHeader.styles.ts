@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components/native';
 export const Container = styled.View`
   ${({ theme }) => css`
     align-items: center;
-    margin-top: ${theme.spacings.xxlarge}px;
     padding-horizontal: ${theme.spacings.huge}px;
     width: 100%;
   `}
