@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components/native';
 
 import { BorderRadius } from '@/types/theme';
 
+import { Text } from '../Text/Text';
+
 export type ContainerProps = {
   rounded?: BorderRadius;
 };
@@ -19,4 +21,8 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
       border-radius: ${theme.border.radius[rounded]}px;
     `}
   `}
+`;
+
+export const Label = styled(Text).attrs({ color: 'red', size: 'small' })`
+  text-transform: capitalize;
 `;

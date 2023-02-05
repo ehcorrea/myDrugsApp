@@ -44,3 +44,15 @@ test.each(Object.keys(theme.border.radius))(
     expect(container).toMatchSnapshot();
   }
 );
+
+test('should success render Button.Link', () => {
+  const container = render(
+    <Button.Link label="button label" onPress={onPress} />
+  );
+  const button = container.getByText('button label');
+
+  fireEvent.press(button);
+  expect(onPress).toHaveBeenCalled();
+
+  expect(container).toMatchSnapshot();
+});

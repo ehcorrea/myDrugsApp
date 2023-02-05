@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacityProps } from 'react-native';
+import { TouchableOpacityProps, TouchableOpacity } from 'react-native';
 
 import { Text } from '../Text/Text';
 
@@ -21,3 +21,15 @@ export function Button({ children, label, ...props }: ButtonProps) {
     </S.Container>
   );
 }
+
+type ButtonLinkProps = {
+  label: string;
+} & Omit<ButtonProps, 'children'>;
+
+Button.Link = ({ label, ...props }: ButtonLinkProps) => {
+  return (
+    <TouchableOpacity {...props}>
+      <S.Label>{label}</S.Label>
+    </TouchableOpacity>
+  );
+};
