@@ -1,9 +1,7 @@
 import React from 'react';
 import { TouchableOpacityProps, TouchableOpacity } from 'react-native';
 
-import { Color } from '@/types/theme';
-
-import { Text } from '../Text/Text';
+import { Text, TextProps } from '../Text/Text';
 
 import * as S from './Button.styles';
 
@@ -26,13 +24,13 @@ export function Button({ children, label, ...props }: ButtonProps) {
 
 type ButtonLinkProps = {
   label: string;
-  color?: Color;
+  textProps?: Partial<TextProps>;
 } & Omit<ButtonProps, 'children'>;
 
-Button.Link = ({ label, color, ...props }: ButtonLinkProps) => {
+Button.Link = ({ label, textProps, ...props }: ButtonLinkProps) => {
   return (
     <TouchableOpacity {...props}>
-      <S.Label color={color}>{label}</S.Label>
+      <S.Label {...textProps}>{label}</S.Label>
     </TouchableOpacity>
   );
 };

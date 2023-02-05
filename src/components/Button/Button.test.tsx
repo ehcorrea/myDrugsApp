@@ -47,7 +47,11 @@ test.each(Object.keys(theme.border.radius))(
 
 test('should success render Button.Link', () => {
   const container = render(
-    <Button.Link label="button label" onPress={onPress} color="black" />
+    <Button.Link
+      label="button label"
+      onPress={onPress}
+      textProps={{ color: 'black' }}
+    />
   );
   const button = container.getByText('button label');
   expect(button).toHaveStyle({ color: theme.colors.black });

@@ -377,13 +377,98 @@ exports[`should success render Button.Link 1`] = `
 >
   <Text
     color="black"
-    size="small"
+    props={
+      {
+        "children": "button label",
+        "color": "black",
+        "forwardedComponent": {
+          "$$typeof": Symbol(react.forward_ref),
+          "Paragraph": [Function],
+          "Title": [Function],
+          "attrs": [
+            [Function],
+          ],
+          "inlineStyle": InlineStyle {
+            "rules": [
+              "
+  text-transform: capitalize;
+",
+            ],
+          },
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+        },
+        "forwardedRef": null,
+        "props": [Circular],
+        "theme": {
+          "border": {
+            "radius": {
+              "large": 20,
+              "medium": 10,
+              "small": 8,
+              "xsmall": 4,
+            },
+          },
+          "colors": {
+            "black": "#000000",
+            "darkGray": "#2E2F42",
+            "gray": "#545454",
+            "lightBg": "#06092B",
+            "lightGray": "#E1E1E1",
+            "mainBg": "#EFEFEF",
+            "primary": "#F231A5",
+            "red": "#A74141",
+            "secondary": "#3CD3C1",
+            "white": "#FAFAFA",
+          },
+          "font": {
+            "family": {
+              "italic": "Poppins-Italic",
+              "medium": "Poppins-Medium",
+              "mediumItalic": "Poppins-MediumItalic",
+              "regular": "Poppins-Regular",
+              "semiBold": "Poppins-SemiBold",
+              "semiBoldItalic": "Poppins-SemiBoldItalic",
+              "title": "PlayfairDisplay-regular",
+              "titleItalic": "PlayfairDisplay-Italic",
+            },
+            "sizes": {
+              "huge": 32,
+              "large": 20,
+              "medium": 16,
+              "small": 14,
+              "xlarge": 24,
+              "xsmall": 12,
+              "xxlarge": 28,
+            },
+            "wight": {
+              "bold": 600,
+              "light": 300,
+              "normal": 400,
+              "xbold": 700,
+            },
+          },
+          "spacings": {
+            "huge": 44,
+            "large": 20,
+            "medium": 16,
+            "xlarge": 28,
+            "xsmall": 14,
+            "xxlarge": 32,
+            "xxsmall": 8,
+          },
+        },
+      }
+    }
     style={
       [
         {
           "color": "#000000",
           "fontFamily": "Poppins-Regular",
-          "fontSize": 27,
+          "fontSize": 31,
         },
         {
           "textTransform": "capitalize",
