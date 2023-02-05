@@ -34,5 +34,10 @@ export const TextInput = styled.TextInput.attrs((props) => ({
     flex: 1;
     font-family: ${theme.font.family.regular};
     font-size: ${RFValue(theme.font.sizes.small)}px;
+    padding: 0;
   `}
+`;
+
+export const ShowPassword = styled.TouchableOpacity`
+  align-self: center;
 `;

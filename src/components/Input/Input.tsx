@@ -3,7 +3,6 @@ import {
   StyleProp,
   TextInput,
   TextInputProps,
-  TouchableOpacity,
   TouchableWithoutFeedback,
   ViewStyle,
 } from 'react-native';
@@ -56,7 +55,7 @@ export function Input({ label, onBlur, containerStyle, ...props }: InputProps) {
             value={value}
           />
           {props.secureTextEntry && (
-            <TouchableOpacity onPress={handleShowPassword}>
+            <S.ShowPassword onPress={handleShowPassword}>
               {showPassword ? (
                 <IconPasswordEyeHide
                   accessibilityLabel="hide password"
@@ -70,7 +69,7 @@ export function Input({ label, onBlur, containerStyle, ...props }: InputProps) {
                   width={28}
                 />
               )}
-            </TouchableOpacity>
+            </S.ShowPassword>
           )}
         </S.Wrapper>
       </S.Container>
