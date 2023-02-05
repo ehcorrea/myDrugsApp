@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { InicialScreen, LoginScreen } from '@/screens';
 import { NavigationContainer } from '@react-navigation/native';
+
+import { InitialScreen, LoginScreen } from '@/screens';
 import { NavigationParamList } from '@/types/navigators';
 
 const Stack = createStackNavigator();
@@ -10,10 +11,10 @@ export function Routes() {
   return (
     <NavigationContainer<NavigationParamList>>
       <Stack.Navigator
-        initialRouteName="InicialScreen"
+        initialRouteName="InitialScreen"
         screenOptions={{ headerShown: false }}
       >
-        <Stack.Screen name="InicialScreen" component={InicialScreen} />
+        <Stack.Screen name="InitialScreen" component={InitialScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
       </Stack.Navigator>
     </NavigationContainer>

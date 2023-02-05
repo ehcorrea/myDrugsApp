@@ -2,9 +2,15 @@ import React from 'react';
 
 import { Button } from '@/components';
 
-import * as S from './InicialScreen.styles';
+import * as S from './InitialScreen.styles';
+import { useNavigation } from '@react-navigation/native';
 
-export function InicialScreen() {
+export function InitialScreen() {
+  const { navigate } = useNavigation();
+
+  const handleLogin = () => {
+    navigate('LoginScreen');
+  };
   return (
     <S.Container>
       <S.Header>
@@ -20,7 +26,7 @@ export function InicialScreen() {
       </S.Body>
 
       <S.Footer>
-        <Button label="Get Started" rounded="large" />
+        <Button label="Get Started" rounded="large" onPress={handleLogin} />
       </S.Footer>
     </S.Container>
   );

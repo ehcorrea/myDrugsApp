@@ -1,5 +1,5 @@
 export type PublicNavigatorParamList = {
-  InicialScreen: undefined;
+  InitialScreen: undefined;
   LoginScreen: undefined;
 };
 

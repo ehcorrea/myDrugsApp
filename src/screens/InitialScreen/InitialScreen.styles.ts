@@ -4,7 +4,10 @@ import { InitialBackground } from '@/assets/images';
 import { Dots, Text } from '@/components';
 
 export const Container = styled.View`
-  flex: 1;
+  ${({ theme }) => css`
+    flex: 1;
+    background-color: ${theme.colors.mainBg};
+  `}
 `;
 
 export const Header = styled.View`
