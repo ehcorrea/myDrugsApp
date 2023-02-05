@@ -8,6 +8,7 @@
     "pod": "npx pod-install ios",
     "start": "react-native start --port=8089",
     "test": "jest",
+    "test:mutation": "yarn stryker run --inPlace",
     "ios:build": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='ios'",
     "lint": "eslint src --max-warnings=0",
     "postinstall": "husky install",
