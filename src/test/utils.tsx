@@ -8,6 +8,7 @@ import {
 } from '@testing-library/react-native';
 
 export * from '@testing-library/react-native';
+export * from './mocks';
 
 import { Provider } from '@/components';
 
