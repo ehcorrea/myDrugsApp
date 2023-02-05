@@ -1,9 +1,9 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import { Button } from '@/components';
 
 import * as S from './InitialScreen.styles';
-import { useNavigation } from '@react-navigation/native';
 
 export function InitialScreen() {
   const { navigate } = useNavigation();
