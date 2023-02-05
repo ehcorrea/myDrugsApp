@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, mockedNavigation, render } from '@/test/utils';
 
-import PublicHeader from './PublicHeader';
+import { PublicHeader } from './PublicHeader';
 
 const setup = () => {
   const container = render(<PublicHeader label="Render Label" />);
