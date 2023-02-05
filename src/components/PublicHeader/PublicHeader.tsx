@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
+
 import { IconBack } from '@/assets/images';
 
 import { Text } from '../Text/Text';
@@ -10,7 +11,7 @@ type PublicHeaderProps = {
   label: string;
 };
 
-export default function PublicHeader({ label }: PublicHeaderProps) {
+export function PublicHeader({ label }: PublicHeaderProps) {
   const { goBack } = useNavigation();
 
   const handleGoBack = () => {
