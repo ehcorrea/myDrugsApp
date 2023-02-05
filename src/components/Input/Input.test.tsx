@@ -11,14 +11,16 @@ const setup = (props?: Partial<InputProps>) => {
   );
 
   const wrapper = container.getByLabelText('Render Label field');
+  const style = container.getByTestId('container-styled');
   const label = container.getByText('Render Label');
   const input = container.getByTestId('render label input');
-  return { wrapper, label, input, ...container };
+  return { wrapper, style, label, input, ...container };
 };
 
 describe('<Input/>', () => {
   test('should render text input with success', async () => {
-    const container = setup();
+    const container = setup({ containerStyle: { marginTop: 10 } });
+    expect(container.style).toHaveStyle({ marginTop: 10 });
 
     fireEvent.press(container.wrapper);
     expect(container.input).toHaveAccessibilityState({ selected: true });

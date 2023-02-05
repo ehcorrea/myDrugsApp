@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react';
 import {
+  StyleProp,
   TextInput,
   TextInputProps,
   TouchableOpacity,
   TouchableWithoutFeedback,
+  ViewStyle,
 } from 'react-native';
 
 import { IconPasswordEye, IconPasswordEyeHide } from '@/assets/images';
@@ -13,9 +15,10 @@ import * as S from './Input.styles';
 export type InputProps = {
   label: string;
   onBlur?: () => void;
+  containerStyle?: StyleProp<ViewStyle>;
 } & TextInputProps;
 
-export function Input({ label, onBlur, ...props }: InputProps) {
+export function Input({ label, onBlur, containerStyle, ...props }: InputProps) {
   const [hasFocus, setHasFocus] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [value, SetValue] = useState('');
@@ -36,7 +39,7 @@ export function Input({ label, onBlur, ...props }: InputProps) {
       accessibilityLabel={`${label} field`}
       onPress={handleFocus}
     >
-      <S.Container>
+      <S.Container testID="container-styled" style={containerStyle}>
         <S.Label>{label}</S.Label>
         <S.Wrapper>
           <S.TextInput
