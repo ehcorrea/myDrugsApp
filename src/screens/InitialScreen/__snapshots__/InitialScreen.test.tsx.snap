@@ -86,7 +86,7 @@ exports[`should render screen with success 1`] = `
         [
           {
             "color": "#000000",
-            "fontFamily": "PlayfairDisplay-regular",
+            "fontFamily": "PlayfairDisplay-Regular",
             "fontSize": 63,
             "fontWeight": "600",
           },
@@ -113,7 +113,7 @@ exports[`should render screen with success 1`] = `
           [
             {
               "color": "#000000",
-              "fontFamily": "PlayfairDisplay-regular",
+              "fontFamily": "PlayfairDisplay-Regular",
               "fontSize": 63,
               "fontWeight": "600",
             },

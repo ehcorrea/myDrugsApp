@@ -9,7 +9,7 @@ export default {
   },
   font: {
     family: {
-      title: 'PlayfairDisplay-regular',
+      title: 'PlayfairDisplay-Regular',
       titleItalic: 'PlayfairDisplay-Italic',
       italic: 'Poppins-Italic',
       medium: 'Poppins-Medium',
