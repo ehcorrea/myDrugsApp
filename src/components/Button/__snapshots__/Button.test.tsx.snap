@@ -34,11 +34,13 @@ exports[`[border large] success render Button 1`] = `
     {
       "alignItems": "center",
       "backgroundColor": "#000000",
-      "borderRadius": 20,
-      "height": 44,
-      "justifyContent": "center",
+      "borderRadius": 30,
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -94,10 +96,12 @@ exports[`[border medium] success render Button 1`] = `
       "alignItems": "center",
       "backgroundColor": "#000000",
       "borderRadius": 10,
-      "height": 44,
-      "justifyContent": "center",
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -153,10 +157,12 @@ exports[`[border small] success render Button 1`] = `
       "alignItems": "center",
       "backgroundColor": "#000000",
       "borderRadius": 8,
-      "height": 44,
-      "justifyContent": "center",
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -212,10 +218,12 @@ exports[`[border xsmall] success render Button 1`] = `
       "alignItems": "center",
       "backgroundColor": "#000000",
       "borderRadius": 4,
-      "height": 44,
-      "justifyContent": "center",
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -269,10 +277,12 @@ exports[`[children] success render Button 1`] = `
     {
       "alignItems": "center",
       "backgroundColor": "#000000",
-      "height": 44,
-      "justifyContent": "center",
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -316,10 +326,12 @@ exports[`[label] success render Button 1`] = `
     {
       "alignItems": "center",
       "backgroundColor": "#000000",
-      "height": 44,
-      "justifyContent": "center",
+      "minWidth": 222,
       "opacity": 1,
-      "width": 222,
+      "paddingBottom": 8,
+      "paddingLeft": 8,
+      "paddingRight": 8,
+      "paddingTop": 8,
     }
   }
 >
@@ -406,7 +418,7 @@ exports[`should success render Button.Link 1`] = `
         "theme": {
           "border": {
             "radius": {
-              "large": 20,
+              "large": 30,
               "medium": 10,
               "small": 8,
               "xsmall": 4,

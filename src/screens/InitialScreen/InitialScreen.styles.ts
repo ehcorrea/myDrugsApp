@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components/native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { InitialBackground } from '@/assets/images';
 import { Dots, Text } from '@/components';
 
 export const Container = styled.View`
   ${({ theme }) => css`
-    flex: 1;
     background-color: ${theme.colors.mainBg};
+    flex: 1;
   `}
 `;
 
@@ -14,8 +15,7 @@ export const Header = styled.View`
   ${({ theme }) => css`
     border-bottom-left-radius: ${theme.border.radius.large}px;
     border-bottom-right-radius: ${theme.border.radius.large}px;
-    flex: 5;
-    overflow: hidden;
+    flex: 2;
   `}
 `;
 
@@ -25,13 +25,16 @@ export const Banner = styled.ImageBackground.attrs({
   flex: 1;
 `;
 
-export const Body = styled.View`
+export const SafeArea = styled(SafeAreaView).attrs({ edges: ['bottom'] })`
   ${({ theme }) => css`
-    align-items: center;
-    flex: 2;
-    justify-content: flex-start;
-    margin-top: ${theme.spacings.xlarge}px;
+    flex: 1;
+    padding-bottom: ${theme.spacings.large}px;
   `}
+`;
+
+export const Body = styled.View`
+  align-items: center;
+  justify-content: flex-start;
 `;
 
 export const Title = styled(Text.Title).attrs({
@@ -55,6 +58,9 @@ export const Ornament = styled(Dots)`
 `;
 
 export const Footer = styled.View`
-  align-items: center;
-  flex: 1;
+  ${({ theme }) =>
+    css`
+      align-items: center;
+      margin-top: ${theme.spacings.medium}px;
+    `}
 `;

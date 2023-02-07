@@ -12,9 +12,8 @@ export const Container = styled.TouchableOpacity<ContainerProps>`
   ${({ theme, rounded }) => css`
     align-items: center;
     background-color: ${theme.colors.black};
-    height: ${theme.spacings.huge}px;
-    justify-content: center;
-    width: 222px;
+    min-width: 222px;
+    padding: ${theme.spacings.xxsmall}px;
 
     ${rounded &&
     css`

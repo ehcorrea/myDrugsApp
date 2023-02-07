@@ -17,12 +17,11 @@ exports[`should render screen with success 1`] = `
     style={
       [
         {
-          "borderBottomLeftRadius": 20,
-          "borderBottomRightRadius": 20,
+          "borderBottomLeftRadius": 30,
+          "borderBottomRightRadius": 30,
           "flexBasis": 0,
-          "flexGrow": 5,
+          "flexGrow": 2,
           "flexShrink": 1,
-          "overflow": "hidden",
         },
       ]
     }
@@ -41,6 +40,7 @@ exports[`should render screen with success 1`] = `
     >
       <Image
         accessibilityLabel="inicial screen banner"
+        resizeMode="cover"
         source={
           {
             "testUri": "../../../src/assets/images/initialBackground.jpeg",
@@ -65,198 +65,219 @@ exports[`should render screen with success 1`] = `
       />
     </View>
   </View>
-  <View
-    style={
+  <RNCSafeAreaView
+    edges={
       [
-        {
-          "alignItems": "center",
-          "flexBasis": 0,
-          "flexGrow": 2,
-          "flexShrink": 1,
-          "justifyContent": "flex-start",
-          "marginTop": 28,
-        },
+        "bottom",
       ]
     }
-  >
-    <Text
-      color="black"
-      size="huge"
-      style={
-        [
-          {
-            "color": "#000000",
-            "fontFamily": "PlayfairDisplay-Regular",
-            "fontSize": 63,
-            "fontWeight": "600",
-          },
-          {},
-        ]
-      }
-    >
-      Beyond The
-    </Text>
-    <View
-      style={
-        [
-          {
-            "marginTop": "-2%",
-            "paddingLeft": 176,
-          },
-        ]
-      }
-    >
-      <Text
-        color="black"
-        size="huge"
-        style={
-          [
-            {
-              "color": "#000000",
-              "fontFamily": "PlayfairDisplay-Regular",
-              "fontSize": 63,
-              "fontWeight": "600",
-            },
-            {},
-          ]
-        }
-      >
-        Journey
-      </Text>
-    </View>
-    <View
-      style={
-        [
-          {
-            "flexDirection": "row",
-          },
-          {
-            "marginTop": 32,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#000000",
-              "borderRadius": 10,
-              "height": 8,
-              "width": 20,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#545454",
-              "borderRadius": 10,
-              "height": 8,
-              "marginLeft": 2,
-              "width": 8,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#545454",
-              "borderRadius": 10,
-              "height": 8,
-              "marginLeft": 2,
-              "width": 8,
-            },
-          ]
-        }
-      />
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#545454",
-              "borderRadius": 10,
-              "height": 8,
-              "marginLeft": 2,
-              "width": 8,
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
-  <View
     style={
       [
         {
-          "alignItems": "center",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
+          "paddingBottom": 20,
         },
       ]
     }
   >
+    <RCTScrollView
+      bounces={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View>
+        <View
+          style={
+            [
+              {
+                "alignItems": "center",
+                "justifyContent": "flex-start",
+              },
+            ]
+          }
+        >
+          <Text
+            color="black"
+            size="huge"
+            style={
+              [
+                {
+                  "color": "#000000",
+                  "fontFamily": "PlayfairDisplay-Regular",
+                  "fontSize": 63,
+                  "fontWeight": "600",
+                },
+                {},
+              ]
+            }
+          >
+            Beyond The
+          </Text>
+          <View
+            style={
+              [
+                {
+                  "marginTop": "-2%",
+                  "paddingLeft": 176,
+                },
+              ]
+            }
+          >
+            <Text
+              color="black"
+              size="huge"
+              style={
+                [
+                  {
+                    "color": "#000000",
+                    "fontFamily": "PlayfairDisplay-Regular",
+                    "fontSize": 63,
+                    "fontWeight": "600",
+                  },
+                  {},
+                ]
+              }
+            >
+              Journey
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "marginTop": 32,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#000000",
+                    "borderRadius": 10,
+                    "height": 8,
+                    "width": 20,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#545454",
+                    "borderRadius": 10,
+                    "height": 8,
+                    "marginLeft": 2,
+                    "width": 8,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#545454",
+                    "borderRadius": 10,
+                    "height": 8,
+                    "marginLeft": 2,
+                    "width": 8,
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#545454",
+                    "borderRadius": 10,
+                    "height": 8,
+                    "marginLeft": 2,
+                    "width": 8,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
     <View
-      accessibilityLabel="Get Started"
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "backgroundColor": "#000000",
-          "borderRadius": 20,
-          "height": 44,
-          "justifyContent": "center",
-          "opacity": 1,
-          "width": 222,
-        }
+        [
+          {
+            "alignItems": "center",
+            "marginTop": 16,
+          },
+        ]
       }
     >
-      <Text
-        color="white"
+      <View
+        accessibilityLabel="Get Started"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
-          [
-            {
-              "color": "#FAFAFA",
-              "fontFamily": "Poppins-Regular",
-              "fontSize": 31,
-            },
-          ]
+          {
+            "alignItems": "center",
+            "backgroundColor": "#000000",
+            "borderRadius": 30,
+            "minWidth": 222,
+            "opacity": 1,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          }
         }
       >
-        Get Started
-      </Text>
+        <Text
+          color="white"
+          style={
+            [
+              {
+                "color": "#FAFAFA",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 31,
+              },
+            ]
+          }
+        >
+          Get Started
+        </Text>
+      </View>
     </View>
-  </View>
+  </RNCSafeAreaView>
 </View>
 `;
