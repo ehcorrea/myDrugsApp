@@ -4,13 +4,9 @@ on: workflow_dispatch
 
 
 jobs:
-    bump:
-      uses: ehcorrea/myDrugsApp/.github/workflows/bump-version.yml@5afef8f11fce2d11881667c23b86025c9ce83bd9
       
     build:
       runs-on: ubuntu-latest
-
-      needs: bump
 
       steps:
         - name: Check out Git repository
