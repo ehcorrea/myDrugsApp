@@ -1,6 +1,6 @@
 {
   "name": "MyDrugsApp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android --port=8089",
@@ -13,7 +13,6 @@
     "lint": "eslint src --max-warnings=0",
     "postinstall": "husky install",
     "gen:component": "yarn plop --plopfile generators/component-plopfile.js && yarn eslint --fix 'src/components/index.ts'"
-
   },
   "dependencies": {
     "@react-native-firebase/app": "^16.7.0",
