@@ -72,6 +72,11 @@ jobs:
       needs: build
 
       steps:
+        - name: Bump version and push tag
+          uses: TriPSs/conventional-changelog-action@v3
+          with:
+             repo-token: ${{ secrets.GITHUB_TOKEN }}  
+      
         - name: Check out Git repository
           uses: actions/checkout@v3
           
@@ -80,17 +85,11 @@ jobs:
           with:
             name: Signed Release
             
-        - name: Get release
-          id: get_release
-          uses: bruceadams/get-release@v1.3.2
-          env:
-            GITHUB_TOKEN: ${{ github.token }}    
-
         - name: Upload artifact to Firebase App Distribution
           uses: wzieba/Firebase-Distribution-Github-Action@v1
           with:
             appId: ${{secrets.ANDROID_FIREBASE_APP_ID}}
             serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
             groups: testers
-            releaseNotesFile: ${{ steps.get_release.outputs.upload_url }}
+            releaseNotesFile: CHANGELOG.md
             file: ./app-release-unsigned-signed.apk
