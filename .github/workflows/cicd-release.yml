@@ -73,8 +73,6 @@ jobs:
       steps:
         - name: Bump version and push tag
           uses: TriPSs/conventional-changelog-action@v3
-          with:
-             github-token: ${{ secrets.GITHUB_TOKEN }}  
       
         - name: Check out Git repository
           uses: actions/checkout@v3
