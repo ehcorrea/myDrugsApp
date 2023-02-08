@@ -71,6 +71,10 @@ jobs:
       needs: build
 
       steps:
+      
+        - name: Check out Git repository
+          uses: actions/checkout@v3
+          
         - name: Bump version and push tag
           id: changelog
           uses: TriPSs/conventional-changelog-action@v3
@@ -84,9 +88,6 @@ jobs:
             tag_name: ${{ steps.changelog.outputs.tag }}
             release_name: ${{ steps.changelog.outputs.tag }}
             body: ${{ steps.changelog.outputs.clean_changelog }}
-      
-        - name: Check out Git repository
-          uses: actions/checkout@v3
           
         - name: Download Artifact
           uses: actions/download-artifact@v3
