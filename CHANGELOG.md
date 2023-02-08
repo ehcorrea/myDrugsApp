@@ -1,16 +1,4 @@
-## [0.4.3](https://github.com/ehcorrea/myDrugsApp/compare/v0.4.2...v0.4.3) (2023-02-08)
-
-
-
-## [0.4.2](https://github.com/ehcorrea/myDrugsApp/compare/v0.4.1...v0.4.2) (2023-02-08)
-
-
-
-## [0.4.1](https://github.com/ehcorrea/myDrugsApp/compare/v0.4.0...v0.4.1) (2023-02-08)
-
-
-
-# [0.4.0](https://github.com/ehcorrea/myDrugsApp/compare/v0.2.0...v0.4.0) (2023-02-07)
+# [0.3.0](https://github.com/ehcorrea/myDrugsApp/compare/v0.2.0...0.3.0) (2023-02-07)
 
 
 ### Bug Fixes
@@ -40,7 +28,11 @@
 
 
 
-# [0.2.0](https://github.com/ehcorrea/myDrugsApp/compare/f9a4a7eb09e3546355d0c2ce33953261fcde91cf...v0.2.0) (2023-02-01)
+# [0.2.0](https://github.com/ehcorrea/myDrugsApp/compare/0.1.0...v0.2.0) (2023-02-01)
+
+
+
+# [0.1.0](https://github.com/ehcorrea/myDrugsApp/compare/f9a4a7eb09e3546355d0c2ce33953261fcde91cf...0.1.0) (2023-02-01)
 
 
 ### Bug Fixes
