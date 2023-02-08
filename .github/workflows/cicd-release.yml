@@ -79,6 +79,7 @@ jobs:
           id: changelog
           uses: TriPSs/conventional-changelog-action@v3
           with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
             git-message: 'chore(release): {version}'
             skip-on-empty: 'false'
             
