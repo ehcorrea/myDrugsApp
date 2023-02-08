@@ -2,6 +2,8 @@ name: CICD Release
 
 on: workflow_dispatch
 
+permissions: write-all
+
 jobs:
       
     build:
@@ -79,7 +81,6 @@ jobs:
           id: changelog
           uses: TriPSs/conventional-changelog-action@v3
           with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
             git-message: 'chore(release): {version}'
             skip-on-empty: 'false'
             
