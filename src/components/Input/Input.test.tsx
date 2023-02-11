@@ -3,11 +3,17 @@ import { act, fireEvent, render } from '@/test/utils';
 
 import { Input, InputProps } from './Input';
 
-const spy = jest.fn();
+const spyOnBlur = jest.fn();
+const spyOnChange = jest.fn();
 
 const setup = (props?: Partial<InputProps>) => {
   const container = render(
-    <Input label="Render Label" onBlur={spy} {...props} />
+    <Input
+      label="Render Label"
+      onBlur={spyOnBlur}
+      onChangeText={spyOnChange}
+      {...props}
+    />
   );
 
   const wrapper = container.getByLabelText('Render Label field');
@@ -29,13 +35,14 @@ describe('<Input/>', () => {
     expect(container.queryByLabelText('hide password')).toBeFalsy();
 
     fireEvent.changeText(container.input, 'write a text');
+    expect(spyOnChange).toHaveBeenCalledWith('write a text');
     expect(container.input.props.value).toBe('write a text');
 
     act(() => {
       container.input.props.onBlur?.();
     });
 
-    expect(spy).toHaveBeenCalled();
+    expect(spyOnBlur).toHaveBeenCalled();
     expect(container.input).toHaveAccessibilityState({ selected: false });
   });
 

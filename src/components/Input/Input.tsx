@@ -33,6 +33,11 @@ export function Input({ label, onBlur, containerStyle, ...props }: InputProps) {
     setHasFocus(true);
   };
 
+  const handleChange = (inputValue: string) => {
+    SetValue(inputValue);
+    props.onChangeText?.(inputValue);
+  };
+
   return (
     <TouchableWithoutFeedback
       accessibilityLabel={`${label} field`}
@@ -48,7 +53,7 @@ export function Input({ label, onBlur, containerStyle, ...props }: InputProps) {
               onBlur?.();
               setHasFocus(false);
             }}
-            onChangeText={(inputValue) => SetValue(inputValue)}
+            onChangeText={handleChange}
             ref={inputRef}
             secureTextEntry={props.secureTextEntry && !showPassword}
             testID={`${label.toLowerCase()} input`}
