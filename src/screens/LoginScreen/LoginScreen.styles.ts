@@ -45,10 +45,9 @@ export const Subtitle = styled(Text).attrs({ size: 'small' })`
 
 export const InputEmail = styled(Input).attrs({ label: 'Email Address' })``;
 
-export const InputPassword = styled(Input).attrs(({ theme }) => ({
-  containerStyle: { marginTop: theme.spacings.xlarge },
+export const InputPassword = styled(Input.Password).attrs(({ theme }) => ({
+  containerProps: { style: { marginTop: theme.spacings.xlarge } },
   label: 'Password',
-  secureTextEntry: true,
 }))``;
 
 export const FogotPassword = styled(Button.Link).attrs({
