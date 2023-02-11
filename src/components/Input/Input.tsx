@@ -15,6 +15,7 @@ export type InputProps = {
   containerProps?: ViewProps;
   label: string;
   onBlur?: () => void;
+  error?: string;
 } & TextInputProps;
 
 export function Input({
@@ -22,11 +23,13 @@ export function Input({
   containerProps,
   label,
   onBlur,
+  error,
   ...props
 }: InputProps) {
   const [hasFocus, setHasFocus] = useState(false);
 
   const inputRef = useRef<TextInput>(null);
+  const hasError = !!error;
 
   const handleFocus = () => {
     setHasFocus(true);
@@ -42,7 +45,7 @@ export function Input({
     <TouchableWithoutFeedback onPress={handleFocus}>
       <S.Container {...containerProps}>
         <S.Label>{label}</S.Label>
-        <S.Wrapper>
+        <S.Wrapper testID="input-wrapper" hasError={hasError}>
           <S.TextInput
             {...props}
             accessibilityState={{ selected: hasFocus }}
@@ -51,6 +54,7 @@ export function Input({
           />
           {adornment}
         </S.Wrapper>
+        <S.ErrorMessage>{error}</S.ErrorMessage>
       </S.Container>
     </TouchableWithoutFeedback>
   );
