@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { Text, PublicHeader } from '@/components';
 
@@ -12,6 +13,7 @@ import {
 import * as S from './LoginScreen.styles';
 
 export function LoginScreen() {
+  const { navigate } = useNavigation();
   return (
     <S.SafeArea>
       <PublicHeader label="Login" />
@@ -32,7 +34,7 @@ export function LoginScreen() {
               <Text size="xsmall" color="gray">
                 Don't have an account?{' '}
               </Text>
-              <S.RegisterHere />
+              <S.RegisterHere onPress={() => navigate('SingUpScreen')} />
             </S.RegisterHint>
           </View>
 
