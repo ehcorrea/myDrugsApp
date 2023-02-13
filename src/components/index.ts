@@ -5,3 +5,4 @@ export * from './Logo/Logo';
 export * from './Provider/Provider';
 export * from './PublicHeader/PublicHeader';
 export * from './Text/Text';
+export * from './Label/Label';

@@ -1,37 +1,36 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
 
 import { act, fireEvent, render } from '@/test/utils';
 import theme from '@/config/theme';
 
-import { Input } from './Input';
+import { Input, InputPassword } from './Input';
 
 const spyOnBlur = jest.fn();
+const spyOnFocus = jest.fn();
 const spyOnChange = jest.fn();
 
-test('should render text input', async () => {
+test('should render text input', () => {
   const container = render(
     <Input
-      adornment={<Text>text adornment</Text>}
-      containerProps={{
-        testID: 'component-container',
-        style: { marginTop: 10 },
-      }}
-      label="Input Component"
+      adornment={<View testID="input-adornment" />}
       onBlur={spyOnBlur}
       onChangeText={spyOnChange}
+      onFocus={spyOnFocus}
       testID="input-component"
     />
   );
 
-  const wrapper = container.getByTestId(/component-container/i);
   const input = container.getByTestId(/input-component/i);
 
-  expect(container.getByText('Input Component')).toBeTruthy();
-  expect(container.getByText('text adornment')).toBeTruthy();
-  expect(wrapper).toHaveStyle({ marginTop: 10 });
+  expect(input).toHaveAccessibilityState({ selected: false });
+  expect(container.getByTestId('input-adornment')).toBeTruthy();
 
-  fireEvent.press(wrapper);
+  act(() => {
+    input.props.onFocus?.();
+  });
+
+  expect(spyOnFocus).toHaveBeenCalled();
   expect(input).toHaveAccessibilityState({ selected: true });
 
   fireEvent.changeText(input, 'write a text');
@@ -45,24 +44,16 @@ test('should render text input', async () => {
   expect(input).toHaveAccessibilityState({ selected: false });
 });
 
-test('should render input with error', async () => {
-  const container = render(
-    <Input label="Input error Component" error="required" />
-  );
+test('should render input with error', () => {
+  const container = render(<Input hasError />);
 
-  expect(container.getByText('required')).toBeTruthy();
   expect(container.getByTestId(/input-wrapper/i)).toHaveStyle({
     borderColor: theme.colors.red,
   });
 });
 
-test('should render password input', async () => {
-  const container = render(
-    <Input.Password
-      label="Input Password Component"
-      testID="input-password-component"
-    />
-  );
+test('should render secure text input', () => {
+  const container = render(<InputPassword testID="input-password-component" />);
 
   const input = container.getByTestId(/input-password-component/i);
   expect(input).toHaveProp('secureTextEntry', true);
