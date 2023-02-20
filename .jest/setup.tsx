@@ -1,4 +1,4 @@
-import { mockedNavigation } from '../src/test/mocks';
+import { mockedNavigation, mockedReactHookForm } from '../src/test/mocks';
 
 jest.mock('@react-navigation/native', () => {
   const navigation = jest.requireActual('@react-navigation/native');
@@ -7,3 +7,5 @@ jest.mock('@react-navigation/native', () => {
     useNavigation: jest.fn(() => mockedNavigation),
   };
 });
+
+jest.mock('react-hook-form', () => mockedReactHookForm);

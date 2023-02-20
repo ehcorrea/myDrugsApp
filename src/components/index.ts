@@ -6,3 +6,5 @@ export * from './Provider/Provider';
 export * from './PublicHeader/PublicHeader';
 export * from './Text/Text';
 export * from './Label/Label';
+export * from './Form/Form';
+export * from './InputPassword/InputPassword';
