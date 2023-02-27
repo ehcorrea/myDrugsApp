@@ -12,8 +12,8 @@ export function Dots({ dots = 3, ...props }: DotsProps) {
       <S.Bar />
       {Array(dots)
         .fill(0)
-        .map((_, index) => (
-          <S.Dot key={_ + index} />
+        .map((_: 0, index: number) => (
+          <S.Dot key={index} />
         ))}
     </S.Container>
   );
