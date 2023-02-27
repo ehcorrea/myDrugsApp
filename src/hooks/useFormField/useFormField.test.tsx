@@ -1,5 +1,4 @@
-import React, { createRef, RefObject } from 'react';
-import { TextInput } from 'react-native';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 
 import { Input, InputProps } from '@/components';
@@ -9,7 +8,7 @@ import { useFormField } from './useFormField';
 
 const spyHandlePressLabel = jest.fn();
 
-const setup = (inputRef?: RefObject<TextInput>) => {
+const setup = () => {
   const {
     result: {
       current: { Field },
@@ -36,12 +35,11 @@ const setup = (inputRef?: RefObject<TextInput>) => {
   const input = container.getByTestId(/input-component/i);
   const label = container.getByText('Form Input');
 
-  return { input, label, inputRef, ...container };
+  return { input, label, ...container };
 };
 
 test('render useFormField', () => {
-  const inputRef = createRef<TextInput>();
-  const container = setup(inputRef);
+  const container = setup();
 
   fireEvent.press(container.label);
   expect(spyHandlePressLabel).toHaveBeenCalled();
