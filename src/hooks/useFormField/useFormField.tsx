@@ -1,7 +1,8 @@
 import React from 'react';
 import { TextInput, TouchableWithoutFeedback, View } from 'react-native';
 
-import { Form, FormProps, Label } from '@/components';
+import { Label } from '@/components/Label/Label';
+import { Form, FormProps } from '@/components/Form/Form';
 
 export type UseFormFieldProps<RenderComponentProps> = {
   label?: string;
