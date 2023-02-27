@@ -3,7 +3,7 @@ import { TextInput, TouchableWithoutFeedback, View } from 'react-native';
 
 import { Form, FormProps, Label } from '@/components';
 
-type UseFormFieldProps<RenderComponentProps> = {
+export type UseFormFieldProps<RenderComponentProps> = {
   label?: string;
   handlePressLabel?: () => void;
 } & FormProps<RenderComponentProps>;
