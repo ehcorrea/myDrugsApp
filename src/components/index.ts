@@ -8,4 +8,5 @@ export * from './Label/Label';
 export * from './Logo/Logo';
 export * from './Provider/Provider';
 export * from './PublicHeader/PublicHeader';
+export * from './Spacing/Spacing';
 export * from './Text/Text';
