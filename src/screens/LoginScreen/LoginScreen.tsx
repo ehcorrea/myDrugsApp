@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { useForm } from 'react-hook-form';
 
-import { Text, PublicHeader } from '@/components';
+import { FormField, Text, PublicHeader, Spacing } from '@/components';
 
 import {
   IconLoginApple,
@@ -13,6 +14,8 @@ import {
 import * as S from './LoginScreen.styles';
 
 export function LoginScreen() {
+  const { control } = useForm();
+
   const { navigate } = useNavigation();
   return (
     <S.SafeArea>
@@ -25,11 +28,19 @@ export function LoginScreen() {
           </S.Header>
 
           <View>
-            <S.InputEmail />
-            <S.InputPassword />
-            <S.FogotPassword />
-            <S.Login />
+            <FormField.Input
+              control={control}
+              label="Email Address"
+              name="email"
+            />
+            <Spacing size="xlarge" />
+            <FormField.Password
+              control={control}
+              label="Password"
+              name="password"
+            />
 
+            <S.Login />
             <S.RegisterHint>
               <Text size="xsmall" color="gray">
                 Don't have an account?{' '}

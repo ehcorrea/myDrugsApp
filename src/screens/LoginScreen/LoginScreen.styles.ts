@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Button, Input, Text } from '@/components';
+import { Button, Text } from '@/components';
 
 export const SafeArea = styled(SafeAreaView)`
   ${({ theme }) => css`
@@ -42,13 +42,6 @@ export const Subtitle = styled(Text).attrs({ size: 'small' })`
     margin-bottom: ${theme.spacings.huge}px;
   `}
 `;
-
-export const InputEmail = styled(Input).attrs({ label: 'Email Address' })``;
-
-export const InputPassword = styled(Input.Password).attrs(({ theme }) => ({
-  containerProps: { style: { marginTop: theme.spacings.xlarge } },
-  label: 'Password',
-}))``;
 
 export const FogotPassword = styled(Button.Link).attrs({
   label: 'Forgot Password',

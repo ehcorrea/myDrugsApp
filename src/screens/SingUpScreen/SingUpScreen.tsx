@@ -1,11 +1,14 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useForm } from 'react-hook-form';
 
-import { PublicHeader } from '@/components';
+import { FormField, PublicHeader, Spacing } from '@/components';
 
 import * as S from './SingUpScreen.styles';
 
 export function SingUpScreen() {
+  const { control } = useForm();
+
   return (
     <S.SafeArea>
       <PublicHeader label="Sing Up" />
@@ -17,11 +20,31 @@ export function SingUpScreen() {
           </S.Header>
 
           <View>
-            <S.InputEmail />
-            <S.InputPassword label="Password" />
-            <S.InputPassword label="Repeat Password" />
-            <S.Register />
+            <FormField.Input
+              control={control}
+              name="email"
+              label="Email Address"
+            />
+            <Spacing />
+            <FormField.Input
+              control={control}
+              name="email-repeat"
+              label="Repeat Email Address"
+            />
+            <Spacing size="xlarge" />
+            <FormField.Password
+              control={control}
+              name="password"
+              label="Password"
+            />
+            <Spacing />
+            <FormField.Password
+              control={control}
+              name="password-repeat"
+              label="Repeat Password"
+            />
           </View>
+          <S.Register />
         </S.Container>
       </S.Scroll>
     </S.SafeArea>
