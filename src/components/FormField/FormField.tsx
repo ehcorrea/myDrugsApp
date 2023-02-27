@@ -4,6 +4,7 @@ import { TextInput } from 'react-native';
 import { useFormField, UseFormFieldProps } from '@/hooks';
 
 import { Input, InputProps } from '../Input/Input';
+import { InputPassword } from '../InputPassword/InputPassword';
 
 export type FormFieldProps<T> = Omit<UseFormFieldProps<T>, 'renderComponent'>;
 
@@ -16,5 +17,12 @@ FormField.Input = React.forwardRef<TextInput, FormFieldProps<InputProps>>(
   (props, ref) => {
     const { Field } = useFormField();
     return <Field {...props} ref={ref} renderComponent={Input} />;
+  }
+);
+
+FormField.Password = React.forwardRef<TextInput, FormFieldProps<InputProps>>(
+  (props, ref) => {
+    const { Field } = useFormField();
+    return <Field {...props} ref={ref} renderComponent={InputPassword} />;
   }
 );

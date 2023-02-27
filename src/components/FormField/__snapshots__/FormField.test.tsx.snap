@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[border {
+  Component: [Function],
+  name: 'FormField',
+  testID: 'formField-component'
+}] success render Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <Text
+    size="medium"
+    style={
+      [
+        {
+          "color": "#000000",
+          "fontFamily": "PlayfairDisplay-Regular",
+          "fontSize": 31,
+          "fontWeight": "600",
+        },
+        {
+          "marginBottom": 8,
+          "marginLeft": 20,
+        },
+      ]
+    }
+  />
+  <View
+    hasError={false}
+    style={
+      [
+        {
+          "backgroundColor": "#E1E1E1",
+          "borderColor": "#000000",
+          "borderRadius": 10,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "row",
+        },
+      ]
+    }
+    testID="input-wrapper"
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      forwardedComponent={
+        {
+          "$$typeof": Symbol(react.forward_ref),
+          "State": {
+            "blurTextInput": [Function],
+            "currentlyFocusedField": [Function],
+            "currentlyFocusedInput": [Function],
+            "focusTextInput": [Function],
+          },
+          "attrs": [
+            [Function],
+          ],
+          "inlineStyle": InlineStyle {
+            "rules": [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onChangeText={[Function]}
+      style={
+        [
+          {
+            "borderRadius": 10,
+            "color": "#000000",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 27,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+        ]
+      }
+      testID="formField-component"
+      theme={
+        {
+          "border": {
+            "radius": {
+              "large": 30,
+              "medium": 10,
+              "small": 8,
+              "xsmall": 4,
+            },
+          },
+          "colors": {
+            "black": "#000000",
+            "darkGray": "#2E2F42",
+            "gray": "#545454",
+            "lightBg": "#06092B",
+            "lightGray": "#E1E1E1",
+            "mainBg": "#EFEFEF",
+            "primary": "#F231A5",
+            "red": "#A74141",
+            "secondary": "#3CD3C1",
+            "white": "#FAFAFA",
+          },
+          "font": {
+            "family": {
+              "italic": "Poppins-Italic",
+              "medium": "Poppins-Medium",
+              "mediumItalic": "Poppins-MediumItalic",
+              "regular": "Poppins-Regular",
+              "semiBold": "Poppins-SemiBold",
+              "semiBoldItalic": "Poppins-SemiBoldItalic",
+              "title": "PlayfairDisplay-Regular",
+              "titleItalic": "PlayfairDisplay-Italic",
+            },
+            "sizes": {
+              "huge": 32,
+              "large": 20,
+              "medium": 16,
+              "small": 14,
+              "xlarge": 24,
+              "xsmall": 12,
+              "xxlarge": 28,
+            },
+            "wight": {
+              "bold": 600,
+              "light": 300,
+              "normal": 400,
+              "xbold": 700,
+            },
+          },
+          "spacings": {
+            "huge": 44,
+            "large": 20,
+            "medium": 16,
+            "xlarge": 28,
+            "xsmall": 14,
+            "xxlarge": 32,
+            "xxsmall": 8,
+          },
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`[border {
+  Component: [Object],
+  name: 'FormFieldInput',
+  testID: 'formField-input-component'
+}] success render Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <Text
+    size="medium"
+    style={
+      [
+        {
+          "color": "#000000",
+          "fontFamily": "PlayfairDisplay-Regular",
+          "fontSize": 31,
+          "fontWeight": "600",
+        },
+        {
+          "marginBottom": 8,
+          "marginLeft": 20,
+        },
+      ]
+    }
+  />
+  <View
+    hasError={false}
+    style={
+      [
+        {
+          "backgroundColor": "#E1E1E1",
+          "borderColor": "#000000",
+          "borderRadius": 10,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "row",
+        },
+      ]
+    }
+    testID="input-wrapper"
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      forwardedComponent={
+        {
+          "$$typeof": Symbol(react.forward_ref),
+          "State": {
+            "blurTextInput": [Function],
+            "currentlyFocusedField": [Function],
+            "currentlyFocusedInput": [Function],
+            "focusTextInput": [Function],
+          },
+          "attrs": [
+            [Function],
+          ],
+          "inlineStyle": InlineStyle {
+            "rules": [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onChangeText={[Function]}
+      style={
+        [
+          {
+            "borderRadius": 10,
+            "color": "#000000",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 27,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+        ]
+      }
+      testID="formField-input-component"
+      theme={
+        {
+          "border": {
+            "radius": {
+              "large": 30,
+              "medium": 10,
+              "small": 8,
+              "xsmall": 4,
+            },
+          },
+          "colors": {
+            "black": "#000000",
+            "darkGray": "#2E2F42",
+            "gray": "#545454",
+            "lightBg": "#06092B",
+            "lightGray": "#E1E1E1",
+            "mainBg": "#EFEFEF",
+            "primary": "#F231A5",
+            "red": "#A74141",
+            "secondary": "#3CD3C1",
+            "white": "#FAFAFA",
+          },
+          "font": {
+            "family": {
+              "italic": "Poppins-Italic",
+              "medium": "Poppins-Medium",
+              "mediumItalic": "Poppins-MediumItalic",
+              "regular": "Poppins-Regular",
+              "semiBold": "Poppins-SemiBold",
+              "semiBoldItalic": "Poppins-SemiBoldItalic",
+              "title": "PlayfairDisplay-Regular",
+              "titleItalic": "PlayfairDisplay-Italic",
+            },
+            "sizes": {
+              "huge": 32,
+              "large": 20,
+              "medium": 16,
+              "small": 14,
+              "xlarge": 24,
+              "xsmall": 12,
+              "xxlarge": 28,
+            },
+            "wight": {
+              "bold": 600,
+              "light": 300,
+              "normal": 400,
+              "xbold": 700,
+            },
+          },
+          "spacings": {
+            "huge": 44,
+            "large": 20,
+            "medium": 16,
+            "xlarge": 28,
+            "xsmall": 14,
+            "xxlarge": 32,
+            "xxsmall": 8,
+          },
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`[border {
+  Component: [Object],
+  name: 'FormFieldPassword',
+  testID: 'formField-password-component'
+}] success render Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <Text
+    size="medium"
+    style={
+      [
+        {
+          "color": "#000000",
+          "fontFamily": "PlayfairDisplay-Regular",
+          "fontSize": 31,
+          "fontWeight": "600",
+        },
+        {
+          "marginBottom": 8,
+          "marginLeft": 20,
+        },
+      ]
+    }
+  />
+  <View
+    hasError={false}
+    style={
+      [
+        {
+          "backgroundColor": "#E1E1E1",
+          "borderColor": "#000000",
+          "borderRadius": 10,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "row",
+        },
+      ]
+    }
+    testID="input-wrapper"
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      forwardedComponent={
+        {
+          "$$typeof": Symbol(react.forward_ref),
+          "State": {
+            "blurTextInput": [Function],
+            "currentlyFocusedField": [Function],
+            "currentlyFocusedInput": [Function],
+            "focusTextInput": [Function],
+          },
+          "attrs": [
+            [Function],
+          ],
+          "inlineStyle": InlineStyle {
+            "rules": [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "render": [Function],
+          "shouldForwardProp": undefined,
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onChangeText={[Function]}
+      secureTextEntry={true}
+      style={
+        [
+          {
+            "borderRadius": 10,
+            "color": "#000000",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 27,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+        ]
+      }
+      testID="formField-password-component"
+      theme={
+        {
+          "border": {
+            "radius": {
+              "large": 30,
+              "medium": 10,
+              "small": 8,
+              "xsmall": 4,
+            },
+          },
+          "colors": {
+            "black": "#000000",
+            "darkGray": "#2E2F42",
+            "gray": "#545454",
+            "lightBg": "#06092B",
+            "lightGray": "#E1E1E1",
+            "mainBg": "#EFEFEF",
+            "primary": "#F231A5",
+            "red": "#A74141",
+            "secondary": "#3CD3C1",
+            "white": "#FAFAFA",
+          },
+          "font": {
+            "family": {
+              "italic": "Poppins-Italic",
+              "medium": "Poppins-Medium",
+              "mediumItalic": "Poppins-MediumItalic",
+              "regular": "Poppins-Regular",
+              "semiBold": "Poppins-SemiBold",
+              "semiBoldItalic": "Poppins-SemiBoldItalic",
+              "title": "PlayfairDisplay-Regular",
+              "titleItalic": "PlayfairDisplay-Italic",
+            },
+            "sizes": {
+              "huge": 32,
+              "large": 20,
+              "medium": 16,
+              "small": 14,
+              "xlarge": 24,
+              "xsmall": 12,
+              "xxlarge": 28,
+            },
+            "wight": {
+              "bold": 600,
+              "light": 300,
+              "normal": 400,
+              "xbold": 700,
+            },
+          },
+          "spacings": {
+            "huge": 44,
+            "large": 20,
+            "medium": 16,
+            "xlarge": 28,
+            "xsmall": 14,
+            "xxlarge": 32,
+            "xxsmall": 8,
+          },
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignSelf": "center",
+          "marginRight": 16,
+          "opacity": 1,
+        }
+      }
+    >
+      <svg
+        accessibilityLabel="show password"
+        data-file-name="SvgIconPasswordEyeHide"
+        height={23}
+        style={
+          [
+            {},
+          ]
+        }
+        width={28}
+      />
+    </View>
+  </View>
+</View>
+`;
